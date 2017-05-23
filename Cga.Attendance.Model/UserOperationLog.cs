@@ -14,10 +14,17 @@ namespace Cga.Attendance.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string JobNum { get; set; }
-
+        /// <summary>
+        /// 姓名
+        /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// 具体操作记录
+        /// </summary>
         public string LogDescriptions { get; set; }
-
+        /// <summary>
+        /// 时间
+        /// </summary>
         public DateTime? CreateTime { get; set; }
 
     }
