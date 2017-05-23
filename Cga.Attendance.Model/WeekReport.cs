@@ -13,38 +13,47 @@ namespace Cga.Attendance.Model
     /// 编号 主键
     /// </summary>
         [Key]
+        [Description("编号 主键")]
         public int Id { get; set; }
         /// <summary>
         /// 工号
         /// </summary>
+        [Description("工号")]
         public string JobNum { get; set; }
         /// <summary>
         /// 模块
         /// </summary>
+        [Description("模块")]
         public string WorkModule { get; set; }
         /// <summary>
         /// 内容
         /// </summary>
+        [Description("内容")]
         public string WorkContent { get; set; }
         /// <summary>
         /// 完成时间
         /// </summary>
+        [Description("完成时间")]
         public string FinishDate { get; set; }
         /// <summary>
         /// 工作进度
         /// </summary>
+        [Description("工作进度")]
         public string WorkProgress { get; set; }
         /// <summary>
         /// 周数表Id 外键
         /// </summary>
+        [Description("周数表Id 外键")]
         public int WeekReportFlagId { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
+        [Description("备注")]
         public string Remark { get; set; }
         /// <summary>
         /// 创建时间
         /// </summary>
+        [Description("创建时间")]
         public DateTime? CreateTime { get; set; }
     }
 }

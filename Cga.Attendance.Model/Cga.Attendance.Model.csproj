@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201705231150300_AddWeekReportAndWeekReportFlagTable.Designer.cs">
       <DependentUpon>201705231150300_AddWeekReportAndWeekReportFlagTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.cs" />
+    <Compile Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.Designer.cs">
+      <DependentUpon>201705231158218_AddWeekReportAndWeekReportFlagDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
@@ -77,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705231150300_AddWeekReportAndWeekReportFlagTable.resx">
       <DependentUpon>201705231150300_AddWeekReportAndWeekReportFlagTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.resx">
+      <DependentUpon>201705231158218_AddWeekReportAndWeekReportFlagDescription.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
