@@ -28,6 +28,10 @@
         public DbSet<UserItem> UserItems { get; set; }
 
         public DbSet<UserOperationLog> UserOperationLogs { get; set; }
+
+        public DbSet<WeekReport> WeekReports { get; set; }
+
+        public DbSet<WeekReportFlag> WeekReportFlags { get; set; }
     }
 
     //public class MyEntity
