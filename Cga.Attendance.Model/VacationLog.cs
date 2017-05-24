@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,9 +8,9 @@ using System.Threading.Tasks;
 namespace Cga.Attendance.Model
 {
     /// <summary>
-    /// '员工假期数据表';
+    /// 假期修改
     /// </summary>
-    public class Vacation
+    public class VacationLog
     {
         public int Id { get; set; }
         /// <summary>
@@ -22,17 +21,24 @@ namespace Cga.Attendance.Model
 
         public User User { get; set; }
         /// <summary>
-        /// '假期类型,1为调休，2为年假，3为全薪病假',
+        /// 处理标题描述
         /// </summary>
-        public int VacationId { get; set; }
+        public string Description { get; set; }
         /// <summary>
-        /// 过期时间
+        /// 处理时间
         /// </summary>
-        [Column(TypeName = "Date")]
-        public DateTime Expirdate { get; set; }
+        public DateTime? OperaDateTime { get; set; }
         /// <summary>
-        /// 假期/调休剩余时长
+        /// 处理的假期类型
+        /// </summary>
+        public int Type { get; set; }
+        /// <summary>
+        /// 处理了多少个小时
         /// </summary>
         public int Hours { get; set; }
+        /// <summary>
+        /// 备注
+        /// </summary>
+        public string Remark { get; set; }
     }
 }

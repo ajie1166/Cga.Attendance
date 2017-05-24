@@ -20,7 +20,10 @@ namespace Cga.Attendance.Model
         /// 工号
         /// </summary>
         [Description("工号")]
+        [ForeignKey("User")]
         public string JobNum { get; set; }
+
+        public User User { get; set; }
         /// <summary>
         /// 模块
         /// </summary>

@@ -49,7 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyRecord.cs" />
+    <Compile Include="ApproveChain.cs" />
+    <Compile Include="ArrangeDate.cs" />
+    <Compile Include="AttendanceRecord.cs" />
     <Compile Include="CgaAttendanceDbContext.cs" />
+    <Compile Include="Department.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Migrations\201705240209409_createdatabase.cs" />
     <Compile Include="Migrations\201705240209409_createdatabase.Designer.cs">
@@ -75,12 +80,30 @@
     <Compile Include="Migrations\201705240305048_updateDateType.Designer.cs">
       <DependentUpon>201705240305048_updateDateType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705240522421_addtables.cs" />
+    <Compile Include="Migrations\201705240522421_addtables.Designer.cs">
+      <DependentUpon>201705240522421_addtables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240554174_finishtablesdesign.cs" />
+    <Compile Include="Migrations\201705240554174_finishtablesdesign.Designer.cs">
+      <DependentUpon>201705240554174_finishtablesdesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240625112_addattrecordforeignkey.cs" />
+    <Compile Include="Migrations\201705240625112_addattrecordforeignkey.Designer.cs">
+      <DependentUpon>201705240625112_addattrecordforeignkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240633268_addattrecordforeignkey_1.cs" />
+    <Compile Include="Migrations\201705240633268_addattrecordforeignkey_1.Designer.cs">
+      <DependentUpon>201705240633268_addattrecordforeignkey_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="OriginalRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserItem.cs" />
     <Compile Include="UserOperationLog.cs" />
     <Compile Include="Vacation.cs" />
+    <Compile Include="VacationLog.cs" />
     <Compile Include="WeekReport.cs" />
     <Compile Include="WeekReportFlag.cs" />
   </ItemGroup>
@@ -106,6 +129,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705240305048_updateDateType.resx">
       <DependentUpon>201705240305048_updateDateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240522421_addtables.resx">
+      <DependentUpon>201705240522421_addtables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240554174_finishtablesdesign.resx">
+      <DependentUpon>201705240554174_finishtablesdesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240625112_addattrecordforeignkey.resx">
+      <DependentUpon>201705240625112_addattrecordforeignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240633268_addattrecordforeignkey_1.resx">
+      <DependentUpon>201705240633268_addattrecordforeignkey_1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

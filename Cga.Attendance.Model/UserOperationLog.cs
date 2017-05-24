@@ -13,7 +13,9 @@ namespace Cga.Attendance.Model
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        [ForeignKey("User")]
         public string JobNum { get; set; }
+        public User User { get; set; }
         /// <summary>
         /// 姓名
         /// </summary>

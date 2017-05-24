@@ -10,8 +10,7 @@ namespace Cga.Attendance.Model
 {
     public class User
     {
-        public int Id { get; set; }
-
+        [Key]
         [StringLength(50)]
         public string JobNum { get; set; }
 
