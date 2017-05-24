@@ -51,23 +51,36 @@
   <ItemGroup>
     <Compile Include="CgaAttendanceDbContext.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Migrations\201705231146541_AddWeekReportAndWeekReportFlag.cs" />
-    <Compile Include="Migrations\201705231146541_AddWeekReportAndWeekReportFlag.Designer.cs">
-      <DependentUpon>201705231146541_AddWeekReportAndWeekReportFlag.cs</DependentUpon>
+    <Compile Include="Migrations\201705240209409_createdatabase.cs" />
+    <Compile Include="Migrations\201705240209409_createdatabase.Designer.cs">
+      <DependentUpon>201705240209409_createdatabase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705231150300_AddWeekReportAndWeekReportFlagTable.cs" />
-    <Compile Include="Migrations\201705231150300_AddWeekReportAndWeekReportFlagTable.Designer.cs">
-      <DependentUpon>201705231150300_AddWeekReportAndWeekReportFlagTable.cs</DependentUpon>
+    <Compile Include="Migrations\201705240256594_updateWeekReportFlagDefaultValue.cs" />
+    <Compile Include="Migrations\201705240256594_updateWeekReportFlagDefaultValue.Designer.cs">
+      <DependentUpon>201705240256594_updateWeekReportFlagDefaultValue.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.cs" />
-    <Compile Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.Designer.cs">
-      <DependentUpon>201705231158218_AddWeekReportAndWeekReportFlagDescription.cs</DependentUpon>
+    <Compile Include="Migrations\201705240300027_updateWeekReportFlagDefaultValue_1.cs" />
+    <Compile Include="Migrations\201705240300027_updateWeekReportFlagDefaultValue_1.Designer.cs">
+      <DependentUpon>201705240300027_updateWeekReportFlagDefaultValue_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240301301_updateWeekReportFlagDefaultValue_2.cs" />
+    <Compile Include="Migrations\201705240301301_updateWeekReportFlagDefaultValue_2.Designer.cs">
+      <DependentUpon>201705240301301_updateWeekReportFlagDefaultValue_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240303319_updateWeekReportFlagDefaultValue_3.cs" />
+    <Compile Include="Migrations\201705240303319_updateWeekReportFlagDefaultValue_3.Designer.cs">
+      <DependentUpon>201705240303319_updateWeekReportFlagDefaultValue_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705240305048_updateDateType.cs" />
+    <Compile Include="Migrations\201705240305048_updateDateType.Designer.cs">
+      <DependentUpon>201705240305048_updateDateType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserItem.cs" />
     <Compile Include="UserOperationLog.cs" />
+    <Compile Include="Vacation.cs" />
     <Compile Include="WeekReport.cs" />
     <Compile Include="WeekReportFlag.cs" />
   </ItemGroup>
@@ -76,14 +89,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705231146541_AddWeekReportAndWeekReportFlag.resx">
-      <DependentUpon>201705231146541_AddWeekReportAndWeekReportFlag.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705240209409_createdatabase.resx">
+      <DependentUpon>201705240209409_createdatabase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705231150300_AddWeekReportAndWeekReportFlagTable.resx">
-      <DependentUpon>201705231150300_AddWeekReportAndWeekReportFlagTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705240256594_updateWeekReportFlagDefaultValue.resx">
+      <DependentUpon>201705240256594_updateWeekReportFlagDefaultValue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705231158218_AddWeekReportAndWeekReportFlagDescription.resx">
-      <DependentUpon>201705231158218_AddWeekReportAndWeekReportFlagDescription.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705240300027_updateWeekReportFlagDefaultValue_1.resx">
+      <DependentUpon>201705240300027_updateWeekReportFlagDefaultValue_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240301301_updateWeekReportFlagDefaultValue_2.resx">
+      <DependentUpon>201705240301301_updateWeekReportFlagDefaultValue_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240303319_updateWeekReportFlagDefaultValue_3.resx">
+      <DependentUpon>201705240303319_updateWeekReportFlagDefaultValue_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705240305048_updateDateType.resx">
+      <DependentUpon>201705240305048_updateDateType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@ namespace Cga.Attendance.Model.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddWeekReportAndWeekReportFlag : DbMigration
+    public partial class createdatabase : DbMigration
     {
         public override void Up()
         {
@@ -64,10 +64,42 @@ namespace Cga.Attendance.Model.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.WeekReportFlags",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Flag = c.Int(nullable: false),
+                        WeekStart = c.String(),
+                        WeekEnd = c.String(),
+                        WeekRange = c.String(),
+                        Remark = c.String(),
+                        CreateTime = c.DateTime(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.WeekReports",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        JobNum = c.String(),
+                        WorkModule = c.String(),
+                        WorkContent = c.String(),
+                        FinishDate = c.String(),
+                        WorkProgress = c.String(),
+                        WeekReportFlagId = c.Int(nullable: false),
+                        Remark = c.String(),
+                        CreateTime = c.DateTime(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropTable("dbo.WeekReports");
+            DropTable("dbo.WeekReportFlags");
             DropTable("dbo.Users");
             DropTable("dbo.UserOperationLogs");
             DropTable("dbo.UserItems");

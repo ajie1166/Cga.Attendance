@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,8 @@ namespace Cga.Attendance.Model
         /// 完成时间
         /// </summary>
         [Description("完成时间")]
-        public string FinishDate { get; set; }
+        [Column(TypeName = "Date")]
+        public DateTime FinishDate { get; set; }
         /// <summary>
         /// 工作进度
         /// </summary>

@@ -7,13 +7,13 @@ namespace Cga.Attendance.Model.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddWeekReportAndWeekReportFlag : IMigrationMetadata
+    public sealed partial class updateWeekReportFlagDefaultValue_1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddWeekReportAndWeekReportFlag));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updateWeekReportFlagDefaultValue_1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201705231146541_AddWeekReportAndWeekReportFlag"; }
+            get { return "201705240300027_updateWeekReportFlagDefaultValue_1"; }
         }
         
         string IMigrationMetadata.Source

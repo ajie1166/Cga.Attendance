@@ -3,7 +3,7 @@ namespace Cga.Attendance.Model.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddWeekReportAndWeekReportFlagTable : DbMigration
+    public partial class updateWeekReportFlagDefaultValue_1 : DbMigration
     {
         public override void Up()
         {
