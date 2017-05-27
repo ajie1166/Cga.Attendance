@@ -15,5 +15,7 @@ namespace Cga.Attendance.IRepository
         int UpdateEntity(T entity);
 
 
+        IQueryable<T> LoadEntities(Expression<Func<T, bool>> Lambda);
+
     }
 }
